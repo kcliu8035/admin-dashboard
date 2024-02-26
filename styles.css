@@ -21,7 +21,7 @@ body {
     background-color: grey;
     height: 100vh;
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 15% 85%;
 }
 
 .navigationLink {
@@ -64,7 +64,7 @@ body {
 }
 
 .navbarBottom {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -72,4 +72,87 @@ body {
 .navbarUserGreeting {
     display: flex;
 }
+
+.primaryContent {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "libraryTitle libraryTitle"
+    "p1 p2"
+    "p3 p4"
+    "p5 p6";
+
+    border: 1px solid black;
+    gap: 20px;
+}
+
+.libraryTitle {
+    grid-area: libraryTitle;
+}
+
+.project {
+    border: 1px solid black;
+    /* height: 300px;
+    width: 300px; */
+    margin: 30px;
+}
+
+.project:nth-child(1) {
+    grid-area: p1
+}
+.project:nth-child(2) {
+    grid-area: p2
+}
+.project:nth-child(3) {
+    grid-area: p3
+}
+.project:nth-child(4) {
+    grid-area: p4
+}
+.project:nth-child(5) {
+    grid-area: p5
+}
+.project:nth-child(6) {
+    grid-area: p6
+}
+
+
+.secondaryContent {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20px 1fr 20px 1fr;
+    grid-template-areas: 
+    "announcementsTitle"
+    "announcements"
+    "trendingTitle"
+    "trending";
+}
+
+.secondaryContentContainer {
+    border: 1px solid black;
+}
+
+.announcementsTitle {
+    grid-area: announcementsTitle;
+}
+
+.trendingTitle {
+    grid-area: trendingTitle;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
+
 
